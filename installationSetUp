@@ -1,0 +1,45 @@
+# sparkAppPipeline
+
+Install JDK 
+- Download JDK 8/ JDK 11 (Since it is supported by Spark)
+- Set path in Environment variables using cmd
+- -- setx JAVA_HOME "C:\Program Files\Java\jdk-11.0.0.2"
+- -- setx PATH "%PATH%;%JAVA_HOME%\bin"
+- -- exit
+- Check if installation and environment variable is done correctly using below command
+- -- java -version
+
+Install Python
+check version in cmd
+- -- python --version
+
+Set up Hadoop winutils
+- Download this repository as zip from https://github.com/cdarlint/winutils
+- keep the latest hadoop version (3.2.2)
+- Set path in Environment variables using cmd
+- -- setx HADOOP_HOME "C:\Program Files\hadoop\winutils-master\winutils-master\hadoop-3.2.2"
+- -- setx PATH "%PATH%;%HADOOP_HOME%\bin"
+- -- exit
+
+
+Install Apche Spark
+- Download latest spark and hadoop package
+- - Set path in Environment variables using cmd
+- -- setx SPARK_HOME "C:\Program Files\spark-3.4.4-bin-hadoop3"
+- -- setx PATH "%PATH%;%SPARK_HOME%\bin"
+  If you get warning "WARNING: The data being saved is truncated to 1024 characters.
+                      SUCCESS: Specified value was saved."
+  then set the path through UI
+  Environment variables > user variables > Path > New > C:\Program Files\spark-3.4.4-bin-hadoop3\bin
+
+  Additional set up
+  CMD
+  -- setx PYTHONPATH "C:\Program Files\spark-3.4.4-bin-hadoop3\python;C:\Program Files\spark-3.4.4-bin-hadoop3\python\py4j-0.10.9.7-src.zip"
+  -- setx PYSPARK_PYTHON "C:\Users\HP\AppData\Local\Programs\Python\Python39\python.exe"
+
+  Install PyCharm
+  pip install pyspark
+  pip install py4j
+
+  Start building Spark App 
+
