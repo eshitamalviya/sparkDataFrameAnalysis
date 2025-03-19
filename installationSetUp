@@ -22,7 +22,7 @@ Set up Hadoop winutils
 - -- exit
 
 
-Install Apche Spark
+Install Apache Spark
 - Download latest spark and hadoop package
 - - Set path in Environment variables using cmd
 - -- setx SPARK_HOME "C:\Program Files\spark-3.4.4-bin-hadoop3"
