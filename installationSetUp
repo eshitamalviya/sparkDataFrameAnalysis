@@ -38,7 +38,7 @@ Install Apache Spark
   -- setx PYSPARK_PYTHON "C:\Users\HP\AppData\Local\Programs\Python\Python39\python.exe"
 
   Install PyCharm
-  pip install pyspark
+  pip install pyspark (same version as spark)
   pip install py4j
 
   Start building Spark App 
